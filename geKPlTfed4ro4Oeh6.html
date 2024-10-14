@@ -1,0 +1,225 @@
+<html><head><base href="https://summerrun.ie/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summerrun.ie - Premium Barbershop Supplies</title>
+<style>
+    :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #e74c3c;
+        --accent-color: #f39c12;
+        --text-color: #333;
+        --bg-color: #ecf0f1;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        scroll-behavior: smooth;
+    }
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    nav {
+        background-color: var(--secondary-color);
+        padding: 0.5rem;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 1rem;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: var(--accent-color);
+    }
+    .hero {
+        background-image: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+    .hero::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+        z-index: 1;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .cta-button {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #e67e22;
+    }
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .featured-products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .product-info {
+        padding: 1rem;
+    }
+    .product-info h3 {
+        margin-top: 0;
+    }
+    .product-info p {
+        margin-bottom: 0.5rem;
+    }
+    .price {
+        font-weight: bold;
+        color: var(--secondary-color);
+    }
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Summerrun.ie</h1>
+        <p>Premium Barbershop Supplies</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://summerrun.ie/">Home</a></li>
+            <li><a href="https://summerrun.ie/products/hair-products">Hair Products</a></li>
+            <li><a href="https://summerrun.ie/products/equipment">Equipment</a></li>
+            <li><a href="https://summerrun.ie/about">About Us</a></li>
+            <li><a href="https://summerrun.ie/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Barbershop Game</h1>
+            <p>Premium hair products and equipment for professional barbers</p>
+            <a href="#featured-products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+    <main>
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="featured-products">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Professional Hair Clippers" width="250" height="200">
+                    <div class="product-info">
+                        <h3>Professional Hair Clippers</h3>
+                        <p>High-quality, precision clippers for the perfect cut</p>
+                        <p class="price">€129.99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Premium Pomade" width="250" height="200">
+                    <div class="product-info">
+                        <h3>Premium Pomade</h3>
+                        <p>Strong hold, high shine pomade for classic styles</p>
+                        <p class="price">€24.99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Barber Chair" width="250" height="200">
+                    <div class="product-info">
+                        <h3>Luxurious Barber Chair</h3>
+                        <p>Comfortable and stylish chair for your clients</p>
+                        <p class="price">€599.99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Beard Oil Set" width="250" height="200">
+                    <div class="product-info">
+                        <h3>Beard Oil Set</h3>
+                        <p>Nourishing oils for healthy, shiny beards</p>
+                        <p class="price">€39.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Summerrun.ie. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#featured-products').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
